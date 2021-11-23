@@ -23,14 +23,27 @@
                 main{ 
                     height: 3353px;
                 }
+                .p_main1{ 
+                 
+                  
+                 border: 5px solid #f0f2f5;
+                  
+                }
                 footer{ 
                     height: 347px;
+                    background-color: #172337;
+                }
+                .p_footer_top{ 
+                  height: 255px;
+                }
+                .p_footer_bottom{ 
+                  height: 92px;
                 }
                 .p_tbdr{ 
                     
                     border: 1px solid #000;
                 }
-                .p_text_color{ 
+                .p_text_color{  
                     color: #fff;
 
                 }
@@ -46,9 +59,9 @@
             </style>       
     </head>
     <body>
-            <header class="p_tbdr"> 
-                <div class="p_header_top p_tbdr">
-                    <div class="container p_tbdr h-100">
+            <header class="p_tbdr "> 
+                <div class="p_header_top fixed-top  ">
+                    <div class="container  h-100">
                         <!-- <nav class="navbar navbar-light ">
                             <div class="container-fluid ">
                               <form class="d-flex p_flex">
@@ -81,18 +94,50 @@
                              
                             </li>
                             
-                          </ul>
+                          </ul> 
                     </div>
                 </div>
-                <div class="p_header_bottom p_tbdr ">
-                    <div class="container p_tbdr h-100">B</div>  
+                <div class="p_header_bottom  ">
+                    <div class="container h-100">B</div>  
                 </div>
             </header>
-            <main class="p_tbdr"> 
+            <main class=""> 
+              <div class="p_main1">
 
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/slider/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/slider/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/slider/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
             </main>
             <footer class="p_tbdr"> 
-
+                <div class="p_footer_top p_tbdr " >
+                  <div class="container p_tbdr h-100">
+                    A
+                  </div>
+                </div>
+                <div class="p_footer_bottom p_tbdr " >
+                  <div class="container p_tbdr h-100">
+                    B
+                  </div>
+                </div>
             </footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
